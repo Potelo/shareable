@@ -1,6 +1,6 @@
-<?php namespace RyanNielson\Shareable;
+<?php 
 
-use \Illuminate\Support\Facades\Config;
+namespace RyanNielson\Shareable;
 
 class Shareable {
     /**
@@ -22,7 +22,7 @@ class Shareable {
      */
     public function all()
     {
-        $defaultButtons = config('shareable::default_buttons', array());
+        $defaultButtons = config('shareable.default_buttons', array());
         $buttons = array();
         $output = '';
 

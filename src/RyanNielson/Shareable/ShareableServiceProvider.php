@@ -32,6 +32,9 @@ class ShareableServiceProvider extends ServiceProvider {
      */
     public function register()
     {
+		$configPath = __DIR__ . '/../../config/config.php';
+        $this->mergeConfigFrom($configPath, 'shareable');
+		
         $this->app->bind('shareable', function($app) {
             return new Shareable($app['view']);
         });

@@ -21,6 +21,6 @@ class Facebook extends Button {
     public function render($options = array())
     {
         $options = array_merge($this->defaultOptions, $options);
-        return $this->view->make('shareable::facebook', array('options' => $options));
+        return view('shareable::facebook', array('options' => $options));
     }
 }

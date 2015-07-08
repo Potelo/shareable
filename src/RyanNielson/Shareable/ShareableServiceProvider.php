@@ -18,7 +18,11 @@ class ShareableServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('ryannielson/shareable');
+        $viewPath = __DIR__.'/../../views';
+        $configPath = __DIR__ . '/../../config/config.php';
+
+        $this->loadViewsFrom($viewPath, 'shareable');
+        $this->publishes([$configPath => config_path('shareable.php')], 'config');
     }
 
     /**
@@ -31,15 +35,5 @@ class ShareableServiceProvider extends ServiceProvider {
         $this->app->bind('shareable', function($app) {
             return new Shareable($app['view']);
         });
-    }
-
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-        return array();
     }
 }

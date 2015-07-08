@@ -26,6 +26,6 @@ class Twitter extends Button {
     public function render($options = array())
     {
         $options = array_merge($this->defaultOptions, $options);
-        return $this->view->make('shareable::twitter', array('options' => $options));
+        return view('shareable::twitter', array('options' => $options));
     }
 }

@@ -30,6 +30,6 @@ class GooglePlus extends Button {
         else
             $options['height'] = '';
 
-        return $this->view->make('shareable::google_plus', array('options' => $options));
+        return view('shareable::google_plus', array('options' => $options));
     }
 }

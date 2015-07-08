@@ -22,7 +22,7 @@ class Shareable {
      */
     public function all()
     {
-        $defaultButtons = Config::get('shareable::default_buttons', array());
+        $defaultButtons = config('shareable::default_buttons', array());
         $buttons = array();
         $output = '';
 
@@ -30,7 +30,7 @@ class Shareable {
             $buttons[] = call_user_func(array($this, $button));
         }
 
-        return $this->view->make('shareable::all', array('buttons' => $buttons));
+        return view('shareable::all', array('buttons' => $buttons));
     }
 
     /**

@@ -7,4 +7,4 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-share-button" data-href="{{{ $options['url'] }}}" data-width="{{{ $options['width'] }}}" data-type="{{{ $options['type'] }}}"></div>
+<div class="fb-share-button" data-href="{{ $options['url'] }}" data-width="{{ $options['width'] }}" data-type="{{ $options['type'] }}"></div>

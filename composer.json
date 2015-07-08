@@ -1,5 +1,5 @@
 {
-  "name": "ryannielson/shareable",
+  "name": "potelo/shareable",
   "description": "A Laravel 4 package to make it easy to add social sharing buttons to your application.",
   "keywords": ["laravel", "social", "share", "facebook", "google plus", "twitter"],
   "homepage": "https://github.com/RyanNielson/shareable",
@@ -13,8 +13,8 @@
   ],
   "require": {
     "php": ">=5.3.0",
-    "illuminate/support": "~4.1",
-    "illuminate/view": "~4.1"
+    "illuminate/support": "~5.0",
+    "illuminate/view": "~5.0"
   },
   "require-dev": {
     "mockery/mockery": "0.9.*",

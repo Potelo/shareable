@@ -22,7 +22,10 @@ class ShareableServiceProvider extends ServiceProvider {
         $configPath = __DIR__ . '/../../config/config.php';
 
         $this->loadViewsFrom($viewPath, 'shareable');
+
         $this->publishes([$configPath => config_path('shareable.php')], 'config');
+
+        $this->publishes([$viewPath => base_path('resources/views/vendor/shareable')], 'view');
     }
 
     /**

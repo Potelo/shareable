@@ -7,7 +7,8 @@ class WhatsApp extends Button {
      * @var Array
      */
     protected $defaultOptions = array(
-        'text' => ''
+        'text' => '',
+        'url' => ''
     );
 
     /**

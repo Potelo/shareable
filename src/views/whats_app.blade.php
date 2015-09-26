@@ -1,0 +1,1 @@
+<a href="whatsapp://send" data-text="{{ $options['text'] }}" data-href="" style="display:none" data-action="share/whatsapp/share">WhatsApp</a>

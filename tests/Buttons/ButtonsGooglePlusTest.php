@@ -3,14 +3,14 @@
 use Mockery as m;
 use RyanNielson\Shareable\Buttons\GooglePlus;
 
-class ButtonsGooglePlusTest extends PHPUnit_Framework_TestCase {
+class ButtonsGooglePlusTest extends \PHPUnit\Framework\TestCase {
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->view = m::mock('Illuminate\View\Factory');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         m::close();
     }

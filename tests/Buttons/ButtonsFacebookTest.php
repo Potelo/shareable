@@ -3,14 +3,14 @@
 use Mockery as m;
 use RyanNielson\Shareable\Buttons\Facebook;
 
-class ButtonsFacebookTest extends PHPUnit_Framework_TestCase {
+class ButtonsFacebookTest extends \PHPUnit\Framework\TestCase {
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->view = m::mock('Illuminate\View\Factory');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         m::close();
     }

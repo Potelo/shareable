@@ -3,14 +3,14 @@
 use Mockery as m;
 use RyanNielson\Shareable\Buttons\Twitter;
 
-class ButtonsTwitterTest extends PHPUnit_Framework_TestCase {
+class ButtonsTwitterTest extends \PHPUnit\Framework\TestCase {
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->view = m::mock('Illuminate\View\Factory');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         m::close();
     }
